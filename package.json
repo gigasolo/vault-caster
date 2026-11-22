@@ -1,0 +1,17 @@
+{
+  "name": "vault-caster",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --test src/library.test.ts src/player.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "node esbuild.config.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "esbuild": "^0.25.12",
+    "obsidian": "^1.10.0",
+    "typescript": "^5.9.3"
+  }
+}

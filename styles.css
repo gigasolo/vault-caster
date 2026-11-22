@@ -1,0 +1,213 @@
+.workspace-leaf-content[data-type="vault-caster"] > .view-content {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 0;
+	padding: 0;
+	overflow: clip;
+}
+
+.vault-caster {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-block-size: 0;
+	min-inline-size: 0;
+	color: var(--text-normal);
+}
+
+.vault-caster-now {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	gap: 8px;
+	padding: 8px 12px 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.vault-caster-now-title {
+	font-weight: var(--font-semibold, 600);
+	line-height: 1.3;
+}
+
+.vault-caster-transport {
+	display: flex;
+	gap: 8px;
+}
+
+.vault-caster-icon {
+	display: inline-flex;
+	align-items: safe center;
+	justify-content: safe center;
+	inline-size: 2rem;
+	block-size: 2rem;
+	padding: 0;
+	border: 0;
+	border-radius: var(--radius-s, 4px);
+	background: var(--background-secondary);
+	color: var(--text-normal);
+	cursor: pointer;
+}
+
+.vault-caster-icon:hover {
+	background: var(--background-modifier-hover);
+}
+
+.vault-caster-times {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	gap: 8px;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+	font-size: var(--font-smallest, 0.8em);
+}
+
+.vault-caster input[type="range"] {
+	accent-color: var(--interactive-accent);
+	inline-size: 100%;
+	min-block-size: 1.75rem;
+	margin: 0;
+	cursor: pointer;
+}
+
+.vault-caster-options {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.vault-caster-speed,
+.vault-caster-volume {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--text-muted);
+	font-size: var(--font-smallest, 0.8em);
+}
+
+.vault-caster-volume {
+	flex: 1;
+}
+
+.vault-caster-volume input[type="range"] {
+	flex: 1;
+}
+
+.vault-caster select {
+	color: var(--text-normal);
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s, 4px);
+	padding: 2px 4px;
+}
+
+.vault-caster-play {
+	display: flex;
+	align-items: safe center;
+	gap: 8px;
+	flex: 1;
+	min-width: 0;
+	padding: 6px 4px;
+	border: 0;
+	border-radius: var(--radius-s, 4px);
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	text-align: start;
+	cursor: pointer;
+}
+
+.vault-caster button:focus-visible,
+.vault-caster input:focus-visible,
+.vault-caster select:focus-visible,
+.vault-caster-row:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: 2px;
+}
+
+.vault-caster-courses {
+	flex: 1 1 auto;
+	min-block-size: 0;
+	min-inline-size: 0;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	scrollbar-gutter: stable;
+	padding-bottom: 12px;
+}
+
+.vault-caster-empty {
+	padding: 16px 12px;
+	color: var(--text-muted);
+}
+
+.vault-caster-course {
+	padding: 8px 8px 4px;
+}
+
+.vault-caster-course-name {
+	display: flex;
+	justify-content: space-between;
+	gap: 8px;
+	margin: 4px 4px 6px;
+	font-size: var(--font-ui-small, 0.9em);
+	font-weight: var(--font-semibold, 600);
+}
+
+.vault-caster-count {
+	color: var(--text-muted);
+	font-weight: var(--font-normal, 400);
+	font-variant-numeric: tabular-nums;
+}
+
+.vault-caster-row {
+	display: flex;
+	align-items: center;
+	border-radius: var(--radius-s, 4px);
+}
+
+.vault-caster-row:hover,
+.vault-caster-row.is-current {
+	background: var(--background-modifier-hover);
+}
+
+.vault-caster-mark {
+	display: inline-flex;
+	align-items: safe center;
+	justify-content: safe center;
+	inline-size: 2.4rem;
+	flex: none;
+	color: var(--text-muted);
+	font-size: var(--font-smallest, 0.8em);
+	font-variant-numeric: tabular-nums;
+}
+
+.vault-caster-label {
+	flex: 1 1 auto;
+	min-inline-size: 0;
+	line-height: 1.35;
+}
+
+.vault-caster-note {
+	display: inline-flex;
+	align-items: safe center;
+	justify-content: safe center;
+	inline-size: 2rem;
+	block-size: 2rem;
+	flex: none;
+	padding: 0;
+	border: 0;
+	border-radius: var(--radius-s, 4px);
+	background: transparent;
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.vault-caster-note:hover {
+	color: var(--text-normal);
+	background: var(--background-modifier-hover);
+}
+
+.vault-caster-status {
+	cursor: pointer;
+	font-variant-numeric: tabular-nums;
+}
